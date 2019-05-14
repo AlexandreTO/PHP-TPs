@@ -30,6 +30,17 @@ BDD à connecter, script insertion -->
     //$reponse= $bdd->query('INSERT INTO auteur values ("Victor Hugo")');
     
   ?>
+  <?php
+    $reponse = $bdd->query('SELECT nom,prenom FROM personne');
+
+    while ($donnees = $reponse->fetch())
+    {
+      	echo $donnees['nom'].' ' . $donnees['prenom'].'<br />';
+    }
+
+$reponse->closeCursor();
+
+?>
     
 </body>
 
