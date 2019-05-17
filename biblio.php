@@ -31,17 +31,18 @@ BDD à connecter, script insertion -->
     
   ?>
   <?php
-    $reponse = $bdd->query('SELECT nom,prenom FROM personne');
+    $reponse = $bdd->query('SELECT nom,prenom,titre FROM personne,livre,auteur where personne.id = auteur.idPersonne and livre.isbn = auteur.idLivre');
+
 
     while ($donnees = $reponse->fetch())
     {
-      	echo $donnees['nom'].' ' . $donnees['prenom'].'<br />';
+      	echo $donnees['nom'].' ' . $donnees['prenom'].' a écrit '.$donnees['titre'].'<br /><br />';
     }
 
 $reponse->closeCursor();
 
 ?>
-    
+
 </body>
 
 </html>
