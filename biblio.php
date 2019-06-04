@@ -1,5 +1,6 @@
 <!-- Une page pour le site
 BDD à connecter, script insertion -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,7 +20,7 @@ BDD à connecter, script insertion -->
       <li>Tous les livres </li>
       <li>Par auteur </li>
       <li>Par année </li>
-      <li>Nouveau livre </li>    
+      <li>Nouveau livre </li>
     </ul>
   </nav>
   <?php
@@ -27,41 +28,47 @@ BDD à connecter, script insertion -->
   Code afin de vérifier si on est connecté à la BDD
   */
     try {
-      $bdd = new PDO('mysql:host=localhost;dbname=tp;', 'root', 'root');
+      $bdd = new PDO('mysql:host=localhost;dbname=tp;', 'root', 'root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
     } 
     catch (Exception $e) {
         die('Erreur: ' . $e->getMessage());
     }
   ?>
+  <!-- 
+  La fonction query -> prepare(requete) permet de préparer une requête avec une variable qu'on peut demander d'où le ? dans la requete ci dessous
+    execute(array($isbn)) execute la requete avec la variable entrée en paramètre dans array qui est ici $isbn
+    La boucle while permet de récupérer les variables qu'on va appeller lors des "echo" (affichage en php)
+
+ -->
   <?php
-    //$reponse= $bdd->query('INSERT INTO auteur values ("Victor Hugo")');
-    
+  $req = $bdd -> prepare('SELECT * FROM personne,livre,auteur,editeur where personne.id = auteur.idPersonne and livre.isbn = auteur.idLivre and editeur.id = livre.editeur and isbn = ?');
+  $isbn = "9782745935830";
+  $req -> execute(array($isbn));
+  while ($donnees = $req->fetch())
+  {
+    echo' <img id="chroniques" src="chronique.jpg" alt="Couverture du livre, chroniques du bout du monde" >  ';
+    echo '<h5>'.$donnees['titre'] .'</h5>';
+    echo 'Ecrit par '.$donnees['prenom'].' '.$donnees['nom'];
+    echo '<br/>';
+    echo 'Edite par '.$donnees['libelle'];
+    echo '<br/>';
+    echo 'Paru en '.$donnees['annee'];
+  }
+
+
+  $req ->closeCursor(); // TOUJOURS FERMER LE CURSEUR A LA FIN D'UNE REQUETE SQL EN PHP
   ?>
-  <?php
-    $reponse = $bdd->query('SELECT nom,prenom,titre FROM personne,livre,auteur where personne.id = auteur.idPersonne and livre.isbn = auteur.idLivre');
 
+  <!--  <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " > -->
 
-    while ($donnees = $reponse->fetch())
-    {
-      	echo $donnees['nom'].' ' . $donnees['prenom'].' a écrit '.$donnees['titre'].'<br /><br />';
-    }
-
-$reponse->closeCursor();
-
-?>
- <img id="chroniques" src="chronique.jpg" alt="Couverture du livre, chroniques du bout du monde" >
- <img id="clans" src="clan.jpg" alt="Couverture du livre, la guerre des clans" >
- <img src="" alt="Couverture du livre, la part de l'autre " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- 
 
 </body>
 
