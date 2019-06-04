@@ -41,7 +41,8 @@ BDD à connecter, script insertion -->
 
  -->
   <?php
-  $req = $bdd -> prepare('SELECT * FROM personne,livre,auteur,editeur where personne.id = auteur.idPersonne and livre.isbn = auteur.idLivre and editeur.id = livre.editeur and isbn = ?');
+  $req = $bdd -> prepare('SELECT * FROM personne,livre,auteur,editeur where personne.id = auteur.idPersonne and livre.isbn = auteur.idLivre and 
+  editeur.id = livre.editeur and isbn = ?');
   $isbn = "9782745935830";
   $req -> execute(array($isbn));
   while ($donnees = $req->fetch())
@@ -52,7 +53,7 @@ BDD à connecter, script insertion -->
     echo '<br/>';
     echo 'Edite par '.$donnees['libelle'];
     echo '<br/>';
-    echo 'Paru en '.$donnees['annee'];
+    echo 'Parut en '.$donnees['annee'];
   }
 
 
