@@ -70,20 +70,62 @@ BDD à connecter, script insertion -->
  <img src="" alt="Couverture du livre, " > -->
 
 ?>
- <img id="chroniques" src="chronique.jpg" alt="Couverture du livre, chroniques du bout du monde" >
- <img id="clans" src="clan.jpg" alt="Couverture du livre, la guerre des clans" >
- <img src="bannis.jpg" alt="Couverture du livre, les bannis et les proscrits" >
- <img src="ca.jpg" alt="Couverture du livre, ça " >
- <img src="cid.jpg" alt="Couverture du livre, le cid " >
- <img src="epouvanteur.jpg" alt="Couverture du livre, L'épouvanteur " >
- <img src="miserables.jpg" alt="Couverture du livre,les miserables " >
- <img src="negres.jpg" alt="Couverture du livre, Les dix petits negres " >
- <img src="overlord.jpg" alt="Couverture du livre, overlord " >
- <img src="part.jpg" alt="Couverture du livre, La part de l'autre " >
- <img src="silmarillion.jpg" alt="Couverture du livre, Le silmarillion " >
- <img src="walking.jpg" alt="Couverture du livre, The walking dead " >
- 
+<main>
+ <img class="rightimg" src="chronique.jpg" alt="Couverture du livre, chroniques du bout du monde" >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="rightimg" src="clan.jpg" alt="Couverture du livre, la guerre des clans" >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="rightimg" src="bannis.jpg" alt="Couverture du livre, les bannis et les proscrits" >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="rightimg" src="ca.jpg" alt="Couverture du livre, ça " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="rightimg" src="cid.jpg" alt="Couverture du livre, le cid " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img id="epouvanteur" src="epouvanteur.jpg" alt="Couverture du livre, L'épouvanteur " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="rightimg" src="miserables.jpg" alt="Couverture du livre,les miserables " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="leftimg" src="negres.jpg" alt="Couverture du livre, Les dix petits negres " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="leftimg" src="overlord.jpg" alt="Couverture du livre, overlord " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="leftimg" src="part.jpg" alt="Couverture du livre, La part de l'autre " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="leftimg" src="silmarillion.jpg" alt="Couverture du livre, Le silmarillion " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+ <img class="leftimg" src="walking.jpg" alt="Couverture du livre, The walking dead " >
+ <p>Ecrit par</p>
+ <p>Edité par</p>
+ <p>Parut le </p>
+</main>
 
+<footer>
+  <p>mention obligatoire</p>
+  <p>mention obligatoire</p>
+  <p>mention obligatoire</p>
+</footer>
 </body>
 
 </html>
