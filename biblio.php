@@ -51,16 +51,16 @@ $reponse->closeCursor();
 ?>
  <img id="chroniques" src="chronique.jpg" alt="Couverture du livre, chroniques du bout du monde" >
  <img id="clans" src="clan.jpg" alt="Couverture du livre, la guerre des clans" >
- <img src="" alt="Couverture du livre, la part de l'autre " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
- <img src="" alt="Couverture du livre, " >
+ <img src="bannis.jpg" alt="Couverture du livre, les bannis et les proscrits" >
+ <img src="ca.jpg" alt="Couverture du livre, ça " >
+ <img src="cid.jpg" alt="Couverture du livre, le cid " >
+ <img src="epouvanteur.jpg" alt="Couverture du livre, L'épouvanteur " >
+ <img src="miserables.jpg" alt="Couverture du livre,les miserables " >
+ <img src="negres.jpg" alt="Couverture du livre, Les dix petits negres " >
+ <img src="overlord.jpg" alt="Couverture du livre, overlord " >
+ <img src="part.jpg" alt="Couverture du livre, La part de l'autre " >
+ <img src="silmarillion.jpg" alt="Couverture du livre, Le silmarillion " >
+ <img src="walking.jpg" alt="Couverture du livre, The walking dead " >
  
 
 </body>
