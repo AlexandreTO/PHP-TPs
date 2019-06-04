@@ -1,0 +1,50 @@
+
+body{
+    margin: 0%;
+    display: grid;
+    grid-template-areas: none
+        "header header"
+        "nav nav"
+        "left right"
+        "bot bot"; 
+    grid-template-columns: 
+        minmax(6.25em, 12.5em) auto 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header
+{
+text-align: center;
+grid-area: header;
+width: auto;
+}
+nav{
+    grid-area: nav;
+    width: auto;
+}
+
+#leftimg
+{
+ grid-area: left;
+ width: auto;
+}
+
+#rightimg
+{
+ grid-area: right; 
+ width: auto;
+}
+
+footer{
+    grid-area: bot;
+    width: auto;
+}
+h1
+{
+    text-align: center;
+    text-shadow: blanchedalmond;
+    
+}
+
+
+
+
