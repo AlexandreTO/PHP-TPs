@@ -14,7 +14,14 @@ BDD à connecter, script insertion -->
   <header>
     <h1>Ma bibliothèque</h1>
   </header>
-  <nav></nav>
+  <nav>
+    <ul class="barrenav">
+      <li>Tous les livres </li>
+      <li>Par auteur </li>
+      <li>Par année </li>
+      <li>Nouveau livre </li>    
+    </ul>
+  </nav>
   <?php
   /*
   Code afin de vérifier si on est connecté à la BDD
@@ -42,6 +49,19 @@ BDD à connecter, script insertion -->
 $reponse->closeCursor();
 
 ?>
+ <img id="chroniques" src="chronique.jpg" alt="Couverture du livre, chroniques du bout du monde" >
+ <img id="clans" src="clan.jpg" alt="Couverture du livre, la guerre des clans" >
+ <img src="" alt="Couverture du livre, la part de l'autre " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ <img src="" alt="Couverture du livre, " >
+ 
 
 </body>
 

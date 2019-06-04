@@ -1,0 +1,87 @@
+ROLE
+PERSONNE
+AUTEUR 
+EDITEUR
+LANGUE
+GENRE
+LIVRE
+
+INSERT INTO role (libelle)
+VALUES 
+('Ecrivain'),
+('Illustrateur'),
+('Traducteur'),
+('Preface'),
+
+INSERT INTO personne (nom, prenom )
+VALUES 
+('Stewart','Paul'),
+('Hunter','Erin'),
+('Schmitt',Eric-Emmanuel'),
+('Kirkman','Robert'),
+('Delaney','Josehp'),
+('Tolkien','J.R.R'),
+('Clemens','James'),
+('オーバーロード Ōbārōdo', 'n/c'),
+('Hugo','Victor'),
+('King','Stehphen'),
+('Christie','Agatha'),
+('Corneille','Pierre'),
+
+
+INSERT INTO editeur (libelle)
+VALUES 
+('Milan Eds'),
+('Pocket Jeunesse'),
+('Librairie Generale Francaise'),
+('Delcourt'),
+('Bayard Jeunesse'),
+('Allen & Unwin'),
+('Del Rey Books'),
+('Enterbrain'),
+('Livre de poche'),
+('Biblio college'),
+('Belfond'),
+('Flammarion'),
+('Librio'), 
+('Larousse'),
+
+INSERT INTO langue (libelle)
+VALUES
+('Francais'),
+('Anglais'),
+('Espagnol'),
+('Japonnais'),
+('Italien'), 
+('Allemand'),
+
+INSERT INTO format (libelle)
+VALUES 
+('Theatre'),
+('Roman'),
+('Nouvelle'),
+('Essai'),
+('Poesie'),
+
+INSERT INTO genre (libelle)
+('Commics'),
+('Science-fiction'),
+('Thriller'),
+('Fantastique'),
+('Policier'),
+('Tragi-comedie'),
+('Epique'),
+('Drame historique'), 
+('Light novel'), 
+('Fiction'),
+
+
+
+
+
+INSERT INTO auteur (idPersonne, idLivre, idRole)
+VALUES
+('	', '	','	')
+
+INSERT INTO livre (isbn, titre, editeur, annee, genre, langue, nbpages)
+VALUES ('	', '	','	')
