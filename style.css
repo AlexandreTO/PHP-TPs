@@ -11,12 +11,6 @@ body{
         minmax(6.25em, 12.5em) auto 50%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header
-{
-text-align: center;
-grid-area: header;
-width: auto;
-}
 nav{
     grid-area: nav;
     width: auto;

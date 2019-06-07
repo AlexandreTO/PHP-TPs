@@ -93,3 +93,5 @@ VALUES
 (11,"978-2010009105",1),
 (12,"9788370620042",1);
 
+Correction BTS Blanc SLAM
+
